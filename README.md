@@ -27,36 +27,4 @@ module.exports.isSorted
   * An `isSorted` function that returns `true` if all the elements in the array appear in ascending order.
    * returns `true` if the array is empty
 
-## Testing  
-#### Greet Module Tests
-* Write a test that expects the greet module to return `null` when you supply non string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
 
-#### Arithmetic Module Tests
-* Test each method for proper use (invoded with number arguments)
-* Test each method for inproper use (invoded with one or more non-numner arguments)
-
-#### Array Util Module Tests
-* Test `sum` to make sure it returns `0` for an empty array.
-* Test `sum` to make sure it adds positive numbers properly
-* Test `sum` to make sure it adds nagative numbers properly
-
-* Test `min` to make sure it returns `undefined` for an empty array
-* Test `min` to make sure it returns the smallest number when the array only has one value
-* Test `min` to make sure it returns the smallest number in a small collection of numbers
-* Test `min` to make sure it returns the smallest number when there's a collection of both positive and negative numbers
-
-* Test `isSorted` to make sure it returns `true` for an empty array
-* Test `isSorted` to make sure it returns `true` for a single-element array
-* Test `isSorted` to make sure it returns `true` for a sorted array
-* Test `isSorted` to make sure it returns `false` for an unsorted array
-
-## Documentation  
-In your `README.md` describe the exported values of each module defined in your lib/ directory.
-Every function description should include it's airty (expected number of paramiters), the expected
-data for each parameter (data-type and limitations), and the it's output behavior (for both valid
-and invalid use). Feel free to write any additional information in your `README.md`.
-
-## Stretch Goals
-* Modify the `isSorted` array utility to return `true` if the array is sorted in either ascending or descending order.
