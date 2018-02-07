@@ -1,32 +1,29 @@
 "use strict";
 
+const add = require("./arithmetic.js").add;
+
 function sum (numbers) {
-    let numbers = [];
-      if (numbers.length === 0) {
-          return 0;
-        }
-      function add (valA, valB) {
-      if (valA === Number || valB === Number) {
-          return null;
-        }
-      return (valA + valB);
-      };
+    if (numbers.length === 0) {
+        return 0;
+      }
     return numbers.reduce(add);
-  };
+};
+//console.log(sum([5, 4, 1]));
   
-  function min (str) {
-      if (str === '') {
-          return null;
-        }
-      return ("hello " + str);
-  };
+function min (numbers) {
+    if (numbers === '') {
+        return undefined;
+      }
+    return Math.min(numbers);
+};
+console.log(min(9, 2, 5, 8));
   
-  function isSorted (str) {
-      if (str === '') {
-          return null;
-        }
-      return ("hello " + str);
-  };
+function isSorted (str) {
+    if (str === '') {
+        return null;
+      }
+    return ("hello " + str);
+};
 
 module.exports = {};
 module.exports.sum = sum;
