@@ -1,0 +1,1 @@
+<!-- Describe the exported values of each module defined in your lib/ directory. Every function description should include it's airty (expected number of paramiters), the expected data for each parameter (data-type and limitations), and the it's output behavior (for both valid and invalid use). Feel free to write any additional information in your README.md. -->
