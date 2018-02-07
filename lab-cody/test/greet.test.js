@@ -29,6 +29,6 @@ describe('greet function ', () => {
     let str = 'world';
     let result = greet(str);
     let expected = true;
-    expected(result).toBe(expected); 
+    expected(result).toBe(expected);
   })
 })
