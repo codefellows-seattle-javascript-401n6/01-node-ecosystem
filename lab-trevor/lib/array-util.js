@@ -28,13 +28,8 @@ ArrayUtil.isSorted = function(arr) {
     if (arr.length === 0) {
         return true;
     }
-    arr.reduce( function( prev, cur ){
-        console.log(prev, cur);
-        
-        if(prev < cur){
-            return true;
-        } 
-    })
+    const limit = arr.length - 1;
+    return arr.every((i) => (i < limit ? arr[i] <= arr[i + 1] : true));
 }
 
 module.exports = {};
