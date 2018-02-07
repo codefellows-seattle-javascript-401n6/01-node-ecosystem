@@ -8,7 +8,5 @@ function greet(str) {
     }
 }
 
-//    greet('dude');
-
 module.exports = {};
 module.exports.greet = greet;
