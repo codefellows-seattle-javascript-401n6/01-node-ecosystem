@@ -1,11 +1,19 @@
 'use strict';
 
+// function greet(str) {
+//   if (str === '') {
+//     return null;
+//   } else {
+//     return 'hello ' + str;
+//   }
+// }
+
 function greet(str) {
-  if (str === '') {
+  let input = str;
+  if(typeof input !== 'string') {
     return null;
-  } else {
-    return 'hello ' + str;
   }
+  return 'hello ' + input;
 }
 
 module.exports = {};
