@@ -1,0 +1,25 @@
+{
+  "name": "lab-01-sweeney",
+  "version": "1.0.0",
+  "description": "Node Ecosystem lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splitpeasoup/01-node-ecosystem.git"
+  },
+  "author": "Caitlin Sweeney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splitpeasoup/01-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/splitpeasoup/01-node-ecosystem#readme",
+  "dependencies": {
+    "eslint": "^4.17.0"
+  },
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
