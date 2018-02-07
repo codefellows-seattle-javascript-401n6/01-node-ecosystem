@@ -1,0 +1,19 @@
+{
+  "name": "lab-daniel",
+  "version": "1.0.0",
+  "description": "lab01_node-ecosystem",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Daniel Pillay",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1",
+    "jest": "^22.1.4"
+  }
+}
