@@ -1,12 +1,12 @@
 'use strict';
 
 function greet (str) {
-    input = str;
+    let input = str;
       if( typeof input != 'string'){
         return null;
     }
-     return 'hello ' + input;
-};
+    return 'hello ' + input;
+}
 
 module.exports = {};
 module.exports.greet = greet;
