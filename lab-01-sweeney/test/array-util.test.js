@@ -1,7 +1,7 @@
 
 "use strict";
 
-const arrayUtil = require('./array-util.js').arrayUtil;
+const arrayUtil = require('../lib/array-util.js').arrayUtil;
 
 describe("containsVowels function", () => {
   describe("it should return false when there's no vowels", () => {

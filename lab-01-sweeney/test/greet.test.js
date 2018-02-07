@@ -1,7 +1,7 @@
 
 "use strict";
 
-const greet = require('./greet.js').greet;
+const greet = require('../lib/greet.js').greet;
 
 describe("greet function", () => {
   describe("it should return null if not a string", () => {
@@ -14,7 +14,7 @@ describe("greet function", () => {
   describe("it should return hello + name", () => {
     let expected = "hello"+str;
     it("it should return true for 'a'", () => {
-      let str = 'gabby'
+      let str = 'world'
       let result = greet(str);
       expect(result).toBe(expected);
     })

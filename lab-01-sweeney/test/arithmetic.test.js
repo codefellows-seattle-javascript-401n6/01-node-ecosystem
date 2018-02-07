@@ -1,7 +1,7 @@
 
 "use strict";
 
-const arithmetic = require('./arithmetic.js').arithmetic;
+const arithmetic = require('../lib/arithmetic.js').arithmetic;
 
 describe("it should return null if a parameter is NaN", () => {
   describe("return null if NaN", () => {
