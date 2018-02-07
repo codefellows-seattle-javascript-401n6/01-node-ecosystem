@@ -4,31 +4,34 @@
 // that accepts a string
 // and returns true if the string contains vowels
 // or returns false if it does not
-function arithmetic(num1, num2) {
 
-  let a = num1;
-  let b = num1;
-   
-  if (a||b === NaN) {
-    return null;
+
+  const arithmetic = {};
+
+  arithmetic.nan = function(a,b){
+
+    if((a||b) === NaN){
+      return null;
+    }
+
   }
   
-  function add(a,b){
+  arithmetic.sum = function (a,b){
   
   let sum = a+b;
 
   return sum;
   }
 
-  function sub(a,b){
+  arithmetic.sub = function(a,b){
 
-  let remainder = a-b;
+  let sub = a-b;
   
-  return remainder;
+  return sub;
   }
-  console.log("remainder:",remainder, "sum:",sum);
+  console.log("sub:",sub, "sum:",sum);
   
-}
+
 
 module.exports = {};
 module.exports.arithmetic = arithmetic;

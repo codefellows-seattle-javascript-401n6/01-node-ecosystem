@@ -4,10 +4,11 @@
 // that accepts a string
 // and returns true if the string contains vowels
 // or returns false if it does not
-function arrayUtil(arr) {
-  let given = arr;
+
+
+  const arrayUtil = {};
  
-  function sum(given){
+  arrayUtil.sum = function (arr){
     if (arr.length === 0){
       return 0;
     }
@@ -21,24 +22,24 @@ function arrayUtil(arr) {
 
   }
   
-  function min(given){
+  arrayUtil.min = function(arr){
     if (arr.length === 0){
       return undefined;
     }
-    let min = Math.min.apply(Math, given);
+    let min = Math.min.apply(Math, arr);
 
     return min;
 
   }
   
-  function isSorted(given){
+  arrayUtil.isSorted = function(arr){
 
     if (arr.length === 0){
       return true;
     }
 
   }
-}
+
 
 module.exports = {};
 module.exports.arrayUtil = arrayUtil;

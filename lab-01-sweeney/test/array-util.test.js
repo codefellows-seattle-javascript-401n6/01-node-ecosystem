@@ -1,7 +1,7 @@
 
 "use strict";
 
-const containsVowels = require('./word.js').containsVowels;
+const arrayUtil = require('./array-util.js').arrayUtil;
 
 describe("containsVowels function", () => {
   describe("it should return false when there's no vowels", () => {

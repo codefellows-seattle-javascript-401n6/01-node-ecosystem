@@ -1,41 +1,25 @@
 
 "use strict";
 
-const containsVowels = require('./word.js').containsVowels;
+const greet = require('./greet.js').greet;
 
-describe("containsVowels function", () => {
-  describe("it should return false when there's no vowels", () => {
-    let expected = false;
-    it("it should return false for an empty string", () => {
+describe("greet function", () => {
+  describe("it should return null if not a string", () => {
+    let expected = null;
+    it("it should return null for an empty string", () => {
       let str = ''
-      let result = containsVowels(str);
+      let result = greet(str);
       expect(result).toBe(expected);
     })
-    it("it should return false for 'b'", () => {
-      let str = 'b'
-      let result = containsVowels(str);
-      expect(result).toBe(expected);
-    })
-    it("it should return false for 'dkjfdskfhk' ", () => {
-      let str = 'dkjfdskfhk'
-      let result = containsVowels(str);
-      expect(result).toBe(expected);
-    })
-  })
-
-
-  describe("it should return true when there are vowels", () => {
-    let expected = true;
+  describe("it should return hello + name", () => {
+    let expected = "hello"+str;
     it("it should return true for 'a'", () => {
-      let str = 'a'
-      let result = containsVowels(str);
+      let str = 'gabby'
+      let result = greet(str);
       expect(result).toBe(expected);
     })
 
-    it("it should return true for 'taxi' ", () => {
-      let str = 'taxi'
-      let result = containsVowels(str);
-      expect(result).toBe(expected);
-    })
+   
   })
+})
 })
