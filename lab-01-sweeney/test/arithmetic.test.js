@@ -1,19 +1,19 @@
 
 "use strict";
 
-const containsVowels = require('./word.js').containsVowels;
+const arithmetic = require('./arithmetic.js').arithmetic;
 
-describe("containsVowels function", () => {
-  describe("it should return false when there's no vowels", () => {
-    let expected = false;
-    it("it should return false for an empty string", () => {
-      let str = ''
-      let result = containsVowels(str);
+describe("arithmetic function, add and substract", () => {
+  describe("return null if NaN", () => {
+    let expected = null;
+    it("it should return null", () => {
+      let num = ''
+      let result = (num);
       expect(result).toBe(expected);
     })
-    it("it should return false for 'b'", () => {
+    it("it should return a num if two parameters are numbers", () => {
       let str = 'b'
-      let result = containsVowels(str);
+      let result = arithmetic();
       expect(result).toBe(expected);
     })
     it("it should return false for 'dkjfdskfhk' ", () => {

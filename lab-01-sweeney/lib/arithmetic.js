@@ -4,23 +4,31 @@
 // that accepts a string
 // and returns true if the string contains vowels
 // or returns false if it does not
-function containsVowels(str) {
-  if (str.length === 0) {
-    return false;
+function arithmetic(num1, num2) {
+
+  let a = num1;
+  let b = num1;
+   
+  if (a||b === NaN) {
+    return null;
+  }
+  
+  function add(a,b){
+  
+  let sum = a+b;
+
+  return sum;
   }
 
-  let vowels = 'aeiou';
-  for (let i = 0; i < str.length; i++) {
-    let char = str.charAt(i);
-    for (let j = 0; j < vowels.length; j++) {
-      let vowel = vowels.charAt(j);
-      if (char === vowel) {
-        return true;
-      }
-    }
+  function sub(a,b){
+
+  let remainder = a-b;
+  
+  return remainder;
   }
-  return false;
+  console.log("remainder:",remainder, "sum:",sum);
+  
 }
 
 module.exports = {};
-module.exports.containsVowels = containsVowels;
+module.exports.arithmetic = arithmetic;
