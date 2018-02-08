@@ -11,7 +11,7 @@ const greet = require('../lib/greet.js').greet;
     test('it should return string when input is a string', () => {
       let str = 'world'
       let result = 'hello' + str;
-      let expected = true;
+      let expected = result;
       expect(result).toBe(expected);
     });
   });

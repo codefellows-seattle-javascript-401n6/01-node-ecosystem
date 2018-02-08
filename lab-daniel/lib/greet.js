@@ -2,7 +2,7 @@
 
 function greet (str) {
     let input = str;
-      if( typeof input != 'string'){
+      if(typeof input != 'string'){
         return null;
     }
     return 'hello ' + input;
