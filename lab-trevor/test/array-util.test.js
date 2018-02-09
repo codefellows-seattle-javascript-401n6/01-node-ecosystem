@@ -49,30 +49,30 @@ describe("array test", () => {
             expect(result).toBe(expected);
         })
     })
-        describe("is sorted tests", () => {
-            it("it should return true for an empty array", () => {
-                let expected = true;
-                let arr = [];
-                let result = arrayUtil.isSorted(arr);
-                expect(result).toBe(expected);
-            })
-            it("it should return true when array has 1 number", () => {
-                let expected = true;
-                let arr = [6];
-                let result = arrayUtil.isSorted(arr);
-                expect(result).toBe(expected);
-            })
-            it("it should return true for sorted array", () => {
-                let expected = true;
-                let arr = [5, 7, 9, 13];
-                let result = arrayUtil.isSorted(arr);
-                expect(result).toBe(expected);
-            })
-            it("it should return false for unsorted array", () => {
-                let expected = false;
-                let arr = [8, 3, -4];
-                let result = arrayUtil.isSorted(arr);
-                expect(result).toBe(expected);
-            })   
+    describe("is sorted tests", () => {
+        it("it should return true for an empty array", () => {
+            let expected = true;
+            let arr = [];
+            let result = arrayUtil.isSorted(arr);
+            expect(result).toBe(expected);
         })
+        it("it should return true when array has 1 number", () => {
+            let expected = true;
+            let arr = [6];
+            let result = arrayUtil.isSorted(arr);
+            expect(result).toBe(expected);
+        })
+        it("it should return true for sorted array", () => {
+            let expected = true;
+            let arr = [5, 7, 8, 9];
+            let result = arrayUtil.isSorted(arr);
+            expect(result).toBe(expected);
+        })
+        it("it should return false for unsorted array", () => {
+            let expected = false;
+            let arr = [8, 3, -4];
+            let result = arrayUtil.isSorted(arr);
+            expect(result).toBe(expected);
+        })   
+    })
 })
