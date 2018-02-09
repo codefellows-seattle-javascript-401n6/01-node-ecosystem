@@ -1,10 +1,9 @@
 'use strict';
 
- const Arithmetic = require('../lib/arithmetic.js').Arithmetic;
+const Arithmetic = require('../lib/arithmetic.js').Arithmetic;
 
 // test for adding
-describe("arithmetic function for adding", () => {  //describe what you’re testing
-    describe("Function will return null if either parameter is not a number", () => {  
+describe("Function will return null if either parameter is not a number", () => {  
         let expected = null
     it("If either number is not a number it returns null", () => {
         let num1 ="not a number";
@@ -13,8 +12,7 @@ describe("arithmetic function for adding", () => {  //describe what you’re tes
         expect(result).toBe(expected);
         })
     })
-})
-    describe("Function that will add if both parameters are numbers", () => {
+describe("Function that will add if both parameters are numbers", () => {
         let expected = 15
     it("It should add up num1 and num2 if both numbers", () => {
         let num1 = 5;
@@ -24,8 +22,7 @@ describe("arithmetic function for adding", () => {  //describe what you’re tes
     })
 })
 //test for subtraction
-describe("arithmetic function for subtraction", () => {  //describe what you’re testing
-    describe("Function will return null if either parameter is not a number", () => {  
+describe("Function will return null if either parameter is not a number", () => {  
         let expected = null
     it("If either number is not a number it returns null", () => {
         let num1 ="not a number";
@@ -34,8 +31,7 @@ describe("arithmetic function for subtraction", () => {  //describe what you’r
         expect(result).toBe(expected);
         })
     })
-})
-    describe("Function that will subtract if both parameters are numbers", () => {
+describe("Function that will subtract if both parameters are numbers", () => {
         let expected = 5;
     it("It will subtract num2 from num1 if both parameters are numbers", () => {
         let num1 = 5;
