@@ -1,6 +1,8 @@
 'use strict';
 
-function addAll(num1, num2) {
+let Arithmetic = {};
+
+Arithmetic.addAll = function (num1, num2) {
   if (typeof num1 !== 'number' || typeof num2 !== 'number') {
     return null;
   } else {
@@ -9,8 +11,8 @@ function addAll(num1, num2) {
      };
     };
 
-function subAll(num1, num2) {
-if (typeof num1 !== 'number' ||typeof num2 !== 'number') {
+Arithmetic.subAll = function (num1, num2) {
+if (typeof num1 !== 'number' || typeof num2 !== 'number') {
     return null;
 } else {
     let sub = (num2 - num1) 
@@ -19,5 +21,4 @@ if (typeof num1 !== 'number' ||typeof num2 !== 'number') {
 
 };
 module.exports = {};
-module.exports.addAll = addAll;
-module.exports.subAll = subAll;
+module.exports.Arithmetic = Arithmetic;
