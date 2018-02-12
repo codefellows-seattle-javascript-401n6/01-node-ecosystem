@@ -16,7 +16,7 @@ function sum (arr) {
 
 // let arr = [1, 12, 4, -5, 3];
 function min (arr) {
-  if (arr === []) {
+  if (arr.length === 0) {
     return undefined;
   }
   let smallestVal = Infinity;
@@ -32,7 +32,7 @@ function min (arr) {
 // let arr = [1, 12, 4, -5, 3];
 // let array = [1, 2, 3, 4, 5];
 function isSorted (arr) {
-  if (arr === [] || arr.length === 1) {
+  if (arr.length <= 1) {
     return true;
   }
   for (let i = 1; i <= arr.length-1; i++){
