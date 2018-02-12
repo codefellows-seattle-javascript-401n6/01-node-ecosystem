@@ -51,4 +51,10 @@ describe('isSorted function', () => {
         let expected = true;
         expect(result).toBe(expected);
     })
+    test(' returns true for an single element array', () => {
+        let array = [1];
+        let result = (arrayUtil.isSorted(array));
+        let expected = true;
+        expect(result).toBe(expected);
+    })
 })
