@@ -3,6 +3,6 @@
 const greet = module.exports = {};
 
 greet.greeting = name => {
-  if (name === "" || typeof name !== "string") return -1;
+  if (name === "" || typeof name !== "string") return null;
   return `Greetings, ${name}!`;
 };
