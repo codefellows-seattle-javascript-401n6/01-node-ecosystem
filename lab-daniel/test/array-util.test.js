@@ -57,4 +57,16 @@ describe('isSorted function', () => {
         let expected = true;
         expect(result).toBe(expected);
     })
+    test(' returns true for a sorted array', () => {
+        let array = [1, 2, 3, 4, 5];
+        let result = (arrayUtil.isSorted(array));
+        let expected = true;
+        expect(result).toBe(expected);
+    })
+    test(' returns false for a descending array', () => {
+        let array = [5, 4, 3, 2, 1];
+        let result = (arrayUtil.isSorted(array));
+        let expected = false;
+        expect(result).toBe(expected);
+    })
 })

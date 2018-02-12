@@ -15,11 +15,12 @@ const minn = ( array ) => {
 };
 
 const isSorted = (arr) => {
+  if (arr[0] > arr[arr.length-1]) {
   for (let i = 0; i < arr.length; i++) {
-    if (arr[0] > arr[arr.length-1]) {
       if (arr[i] < arr[i + 1]) {
-        return false;
+
       }
+       return false;
     }
   }
   return true;
@@ -32,6 +33,7 @@ const isSorted = (arr) => {
     }
   }
 }
+
   
   
 
