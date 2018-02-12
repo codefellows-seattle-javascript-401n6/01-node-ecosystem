@@ -12,6 +12,8 @@ describe('add function', () => {
     expect(result).toBe(expected);
   });
 
+  //write test for negative numbers
+
   it('should return null if x or y is undefined', () => {
     let x = undefined;
     let y = 1;
@@ -48,6 +50,8 @@ describe('subtract function', () => {
     let expected = null;
     expect(result).toBe(expected);
   });
+
+   //write test for negative numbers
 
   it('should return null if x or y is a string value', () => {
     let x = 1;
