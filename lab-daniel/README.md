@@ -1,7 +1,7 @@
-#Modules
+# Modules
 
-##greet.js
-###The greet function consists of one function, ```greet()```: 
+## greet.js
+### The greet function consists of one function, ```greet()```: 
 ```
 function greet (str) {
     let input = str;
@@ -14,8 +14,8 @@ function greet (str) {
 Takes in the paramater of str (string), and returns the concatenated string "hello + str". If the function is empty, greet will return null.
 
 
-##artithmetic.js
-###The arithmetic.js consists of two functions. ```add()```, and ```sub()```:
+## artithmetic.js
+### The arithmetic.js consists of two functions. ```add()```, and ```sub()```:
 ```
 function add(num1, num2) {
     if(typeof num1 != 'number' || typeof num2 != 'number'){
@@ -34,8 +34,8 @@ function sub(num1, num2) {
 -The add function will take in two paramaters(```num1, num2```)and return the sum of the paramaters. If will return null if one or both of the parameters are not numbers.<br>
 -The sub function will do the same except it will subrtact numbers. 
 
-##array-util.js
-###array-util.js consists of three functions. ```summ()``` ```minn()``` ```isSorted```: 
+## array-util.js
+### array-util.js consists of three functions. ```summ()``` ```minn()``` ```isSorted```: 
 
 ```
 const summ = (accumulator, currentValue) => {
