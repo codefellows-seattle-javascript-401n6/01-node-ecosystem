@@ -9,4 +9,10 @@ describe("This tests all the functions of the arithmetic.js file", () => {
       expect(arithmetic.add('cowmoo', 'moocow')).toEqual(null);
     });
   });
+  describe('arithmetic.subtract', () => {
+    test('arithmetic.subtract should return the difference of two numbers unless an error is encountered and will return null if a non number is input', () => {
+      expect(arithmetic.subtract(6, 5)).toEqual(1);
+      expect(arithmetic.subtract('CowPatty')).toEqual(null);
+    });
+  });
 });
