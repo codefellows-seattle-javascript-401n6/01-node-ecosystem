@@ -4,7 +4,7 @@ const arithmetic = require("../lib/arithmetic.js");
 
 describe("This tests all the functions of the arithmetic.js file", () => {
   describe("this tests the add function", () => {
-    test("math.add will return the sum of two numbers", () => {
+    test("math.add will return the sum of two numbers or null if no numbers are input", () => {
       expect(arithmetic.add(3, 6)).toEqual(9);
       expect(arithmetic.add('cowmoo', 'moocow')).toEqual(null);
     });
