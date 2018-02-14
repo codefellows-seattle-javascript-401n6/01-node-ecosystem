@@ -1,6 +1,6 @@
 "use strict";
 
-function sumArr(arr) {
+function sum(arr) {
     if (arr.length === 0) {
         return 0;
     }
@@ -10,7 +10,7 @@ function sumArr(arr) {
     return sum;
 }
 
-function minArr(arr) {
+function min(arr) {
     if (arr.length === 0) {
         return undefined;
     }
@@ -23,13 +23,7 @@ function isSorted(arr) {
     }
 }
 
-const ArrayUtils = requeie('../path/to/arrayu-tils.js');
-let sum = ArrayUtil.sumArr([1,2,3,4,5])
-let min = ArrayUtils.minArr([1,2,3,4,5])
-let isSorted = ArrayUtils.isSorted([])
-
-
 module.exports = {};
-module.exports.sumArr = sumArr;
-module.exports.minArr = minArr;
+module.exports.sum = sum;
+module.exports.min = min;
 module.exports.isSorted = isSorted;
