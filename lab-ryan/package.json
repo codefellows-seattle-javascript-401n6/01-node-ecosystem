@@ -1,7 +1,6 @@
 {
   "name": "lab-ryan",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -12,7 +11,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^22.2.1"
-  }
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.3.0"
+  },
+  "description": ""
 }

@@ -1,6 +1,6 @@
 "use strict";
 // greet test
-const greet = require('../lib/greet.js').greet;
+const greet = require('../lib/greet.js');
 
 describe("greet function", () => {
     it("it should return null with non-string value", () => {
