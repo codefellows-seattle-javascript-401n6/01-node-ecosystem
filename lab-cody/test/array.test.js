@@ -12,7 +12,7 @@ describe('arr function', () => {
       let expected = 10;
       expect(result).toBe(expected);
     })
-    it('should return -13 for [-6,-6,2]', () =>{
+    it('should return -10 for [-6,-6,2]', () =>{
       let arr = [-6,-6,2];
       let result = Array.addUp(arr)
       let expected = -10;
@@ -28,7 +28,7 @@ describe('arr function', () => {
     })
   })
   describe('it should return smallest value from array', () => {
-    it('it should return 4 for [5,4,1,7,8]', () => {
+    it('it should return 1 for [5,4,1,7,8]', () => {
       let arr = [5,4,1,7,8];
       let result =  Array.minVal(arr)
       let expected = 1;
@@ -46,7 +46,7 @@ describe('arr function', () => {
       let expected = 3;
       expect(result).toBe(expected);
     })
-    it('it should return 1 for [1,2,3,-5,-6]', () => {
+    it('it should return -6 for [1,2,3,-5,-6]', () => {
       let arr = [1,2,3,-5,-6];
       let result =  Array.minVal(arr)
       let expected = -6;
