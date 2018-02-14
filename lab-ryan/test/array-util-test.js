@@ -1,40 +1,19 @@
 "use strict";
 
-const ArrayUtil = require('../lib/array-util-test.js');
-const ArrayUtil = require('../path/to/arrayu-util.js');
-let sum = ArrayUtil.sumArr([1, 2, 3, 4, 5])
-let min = ArrayUtil.minArr([1, 2, 3, 4, 5])
-let isSorted = ArrayUtil.isSorted([1,2,3,4,5])
-
-
-describe("we should be able to access exported functions", () => {
-    it("each function should be accessable", () => {
-        let sum = ArrayUtil.sumArr([1,2,3,4,5]);
-        let min = ArrayUtil.minArr([1,2,3,4,5]);
-        let isSorted = ArrayUtil.isSorted([1,2,3,4,5]);
-        // let notSorted = ArrayUtils.notSorted([1,2,3,4,5]); 
-    
-        expect(sum).toBe(15);
-        expect(min).toBe(1);
-        expect(isSorted).toBe(true);
-        // expect(notSorted).toBe(false);
-    })
-})
-
-///////////////////////////////////////////////////
 const sum = require('../lib/array-util.js').sum;
 const min = require('../lib/array-util.js').min;
 const isSorted = require('../lib/array-util.js').isSorted;
 
+//sum
 describe('sum function', () => {
-  test('should return 0 if the array is empty', () => {
+  it('should return 0 if the array is empty', () => {
     let arr = [];
     let result = sum(arr);
     let expected = 0;
     expect(result).toBe(expected);
   });
   
-  it('should return a sum of all numbers in array is they are all positive', () => {
+  it('should return a sum of all numbers in array if they are all positive', () => {
     let arr = [1, 2, 4, 3];
     let result = sum(arr);
     let expected = 10;
@@ -49,17 +28,16 @@ describe('sum function', () => {
   });
 });
 
-
+//min
 describe('min function', () => {
-    //needs fixing
-  test('should return undefined if the array is empty', () => {
+  it('should return undefined if the array is empty', () => {
     let arr = [];
-    let result = min(arr);//ends up returning Infinity instead of undefined
+    let result = min(arr);
     let expected = undefined;
     expect(result).toBe(expected);
   });
 
-  test('should return the smallest number when the array only has one value', () => {
+  it('should return the smallest number when the array only has one value', () => {
     let arr = [5];
     let result = min(arr);
     let expected = 5;
@@ -81,16 +59,16 @@ describe('min function', () => {
   });
 });
 
-
+//isSorted
 describe('isSorted function', () => {
-  test('should return true if the array is empty', () => {
+  it('should return true if the array is empty', () => {
     let arr = [];
     let result = isSorted(arr);
     let expected = true;
     expect(result).toBe(expected);
   });
 
-  test('should return true when the array only has one value', () => {
+  it('should return true when the array only has one value', () => {
     let arr = [5];
     let result = isSorted(arr);
     let expected = true;
@@ -105,7 +83,7 @@ describe('isSorted function', () => {
   });
   
   it('should return false for an unsorted array', () => {
-    let arr = [1, -2, 4, -5];
+    let arr = [1, -5, 4, -2];
     let result = isSorted(arr);
     let expected = false;
     expect(result).toBe(expected);
