@@ -1,14 +1,25 @@
-"use strict";
+'use strict';
 
-const greet = require("../lib/greet.js").greet;
+const greet = require('../lib/greet.js').greet;
 
-describe("greet function", () => {
-    test("it should return null when input is not a string", () => {
-        let str = 8;
-        let expected = null;
+describe('greet function test for integer', () => {
+
+    let expected = null;
+    it('it should return null for an integer', () => {
+        let str = 5;
+        let result = greet(str);
+        expect(result).toBe(expected);
     })
-    test("it should return string when input is a string", () => {
-        let str = "hello world";
-        let expected = true;
+
+});
+
+describe('greet function word = world', () => {
+
+    let expected = 'hello world';
+    it('it should return "hello world"', () => {
+        let str = 'world';
+        let result = greet(str);
+        expect(result).toBe(expected);
     })
-})
+
+});
