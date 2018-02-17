@@ -29,7 +29,7 @@ describe('sum function', () => {
 
 
 describe('min function', () => {
-    //needs fixing
+  //needs fixing
   test('should return undefined if the array is empty', () => {
     let arr = [];
     let result = min(arr);//ends up returning Infinity instead of undefined
