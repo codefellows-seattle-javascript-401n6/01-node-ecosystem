@@ -1,8 +1,6 @@
 'use strict';
 
-const Arithmetic = {};
-
-Arithmetic.add = function(a, b) {
+function Arithmetic(a, b) {
     if (typeof(a) != 'number') {
         return null
     }
@@ -13,20 +11,19 @@ Arithmetic.add = function(a, b) {
 };
 
 
-const SubArithmetic = {};
-
-Subarithmetic.sub = function(a, b) {
+function SubArithmetic(a, b) {
     if (typeof(a) != 'number') {
         return null
     }
     if (typeof(b) != 'number') {
         return null
     } 
-        return b - a;
+        return a - b;
 }
 
-
-
+module.exports = {};
+module.exports.Arithmetic = Arithmetic;
+module.exports.SubArithmetic = SubArithmetic;
 
 
 

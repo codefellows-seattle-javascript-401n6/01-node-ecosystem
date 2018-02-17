@@ -1,3 +1,5 @@
+'use strict';
+
 const name = require('../lib/greet.js').name;
 
 describe('testing name function', () => {
@@ -8,7 +10,7 @@ describe('testing name function', () => {
         expect(result).toBe(expected);
     })
     it('expecting a module saying hello world', () => {
-        let expected = 'Hello World';
+        let expected = 'Hello world';
         let str = 'world';
         let result = name(str);
         expect(result).toBe(expected);

@@ -1,6 +1,6 @@
 'use strict';
 
-function name(str); {
+function name(str) {
     if (typeof(str) != 'string') {
         return null
     }
