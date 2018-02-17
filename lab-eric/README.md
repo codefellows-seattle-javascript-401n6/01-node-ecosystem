@@ -22,7 +22,8 @@
 + Data type is an array of integers
 + Returns the sum of all integers in the array
 + Will return 0 if the array is empty
-+ Accepts negative numbers
++ Accepts negative numbers 
+
 
 #function min()
 + Has an arity of 1 (arr)
