@@ -1,6 +1,6 @@
 "use strict";
 
-function add (a, b) {
+function add(a, b) {
     if (Number.isInteger(a + b)) {
     let sum = a + b;
         return sum;
@@ -9,7 +9,7 @@ function add (a, b) {
   }
 }
 
-function sub (a, b) {
+function sub(a, b) {
     if (Number.isInteger(a - b)) {
     let sub = a - b;
         return sub;

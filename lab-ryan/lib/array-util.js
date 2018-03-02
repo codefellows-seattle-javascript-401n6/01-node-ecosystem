@@ -1,6 +1,8 @@
 "use strict";
 
-function sum(arr) {
+let ArrUtil = {};
+
+ArrUtil.sum = function(arr) {
     if (arr.length === 0) {
         return 0;
     }
@@ -10,20 +12,20 @@ function sum(arr) {
     return sum;
 }
 
-function min(arr) {
+ArrUtil.min = function (arr) {
     if (arr.length === 0) {
         return undefined;
     }
-    let small = arr[0];
+    let smallest = arr[0];
     for (let i = 1; i < arr.lenght; i++){
-        if (arr[i] < small){
-            small = arr[i];
+        if (arr[i] > smallest){
+            smallest = arr[i];
         }
     }
-    return small;
+    return smallest;
 }
 
-function isSorted(arr) {
+ArrUtil.isSorted = function (arr) {
     let isSorted;
     if(arr[0] < arr[arr.length-1]){
         for(let i = 0; i < arr.length; i++){
@@ -44,6 +46,4 @@ function isSorted(arr) {
 
 
 module.exports = {};
-module.exports.sum = sum;
-module.exports.min = min;
-module.exports.isSorted = isSorted;
+module.exports.ArrUtil = ArrUtil;
