@@ -50,7 +50,7 @@ describe('subtract function', () => {
 
   it('should return null if x or y is a string value', () => {
     let x = 1;
-    let y = 'not y';
+    let y = false;
     let result = null;
     let expected = null;
     expect(result).toBe(expected);
