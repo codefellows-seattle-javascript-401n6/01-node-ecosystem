@@ -21,7 +21,7 @@ describe('minArr funtion', () => {
         expect (minArr([])).toBe(undefined);
     });
     it('returns the smallest number when the array only has one value', () => {
-        expect (minArr([1])).toBe(10);
+        expect (minArr([1])).toBe(1);
     });
     it('returns the lowest number from array of [9, 2, 5, 8] to be 2', () => {
         expect (minArr([9, 2, 5, 8])).toBe(2);
