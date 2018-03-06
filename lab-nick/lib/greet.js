@@ -5,7 +5,6 @@ function greet(name) {
     return null;
   } else {
     return ('hello ' + name);
-
   }
 }
 
