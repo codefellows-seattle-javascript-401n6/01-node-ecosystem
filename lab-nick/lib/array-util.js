@@ -9,7 +9,7 @@ function sumArr (numbers) {
     return numbers.reduce(add);
 };
 // console.log(sumArr([]));
-console.log(sumArr([5, 4, 1]));
+// console.log(sumArr([5, 4, 1]));
 // console.log(sumArr([5, -4, 1]));
   
 function minArr (numbers) {
@@ -27,10 +27,15 @@ function isSorted (arr) {
     if (arr.length === 0) {
         return true;
       }
-    return arr.sort(arr);
+    if (arr === arr.sort) {
+        return true;
+    }
+    return false;
 };
-// console.log(isSorted([]));
-// console.log(isSorted(['bravo']));
+// console.log(isSorted([])); //true
+// console.log(isSorted(['5']));  //true
+// console.log(isSorted(['1, 2, 5, 8'])); //true
+console.log(isSorted(['5, 1, 8, 2'])); //false
 
 module.exports = {};
 module.exports.sumArr = sumArr;
