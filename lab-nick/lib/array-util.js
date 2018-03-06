@@ -34,10 +34,10 @@ function isSorted(arr) {
     }
     return true;
 };
-console.log(isSorted([])); //true
-console.log(isSorted([5]));  //true
-console.log(isSorted([1, 2, 5, 8])); //true
-console.log(isSorted([5, 1, 8, 2])); //false
+// console.log(isSorted([])); //true
+// console.log(isSorted([5]));  //true
+// console.log(isSorted([1, 2, 5, 8])); //true
+// console.log(isSorted([5, 1, 8, 2])); //false
 
 module.exports = {};
 module.exports.sumArr = sumArr;
