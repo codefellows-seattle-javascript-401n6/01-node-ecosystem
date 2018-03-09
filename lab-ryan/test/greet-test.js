@@ -3,7 +3,6 @@
 // greet test
 const greet = require('../lib/greet.js').greet;
 
-
 describe('greet function ', () => {
   it('it should return null for an empty string',() => {
     let str = '';

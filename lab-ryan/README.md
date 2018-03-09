@@ -1,6 +1,6 @@
 #Lab-01 Node Ecosystem
 ##Ryan Johnson
-###Contributors Amber Kim, Cody Green, Micael Treat, Nick Damberg
+####Contributors Amber Kim, Cody Green, Micael Treat, Nick Damberg
 
 This lab introduced the JEST testing framework for writing test driven development (TDD) programs.
 
