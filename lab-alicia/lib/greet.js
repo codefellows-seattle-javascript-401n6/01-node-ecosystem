@@ -5,11 +5,13 @@
 // Return null if the input is not a string
 
 function greet(str) {
-  if (str.length === '') {
-    return ('hello ', str);
-  } else {
+  if (typeof str !== 'string') {
     return null;
+  }
+  if (typeof str === 'string') {
+    return (`hello ${str}`);
   }
 }
 
+module.exports = {};
 module.exports.greet = greet;

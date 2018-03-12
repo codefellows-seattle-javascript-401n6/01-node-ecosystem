@@ -4,11 +4,10 @@
 // Write a test the expects the greet module to return 'hello world'
 // This should happen when invoked with 'world' as the first argument
 
-const greet = require('../lib/greet.js');
-const expect = require('expect');
+const greet = require('../lib/greet.js').greet;
 
-describe('testing greet to return hello world', () => {
-  it('return hello world', () => {
+describe('Greet module', () => {
+  it('should return a string', () => {
     let result = greet('world');
     expect(result).toEqual('hello world');
   });

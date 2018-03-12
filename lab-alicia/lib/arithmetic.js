@@ -8,20 +8,22 @@
 //Sub method: define two paramiters
 //If either parameter is a non-number the function should return null
 //Else return the second paramiter subtracted from the first paramiter
-const math = module.exports = {};
+let Math = {};
 
-math.add = (a, b) => {
-  if (typeof a === 'number' && typeof b === 'number') {
+Math.add = (a, b) => {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    return null;
+  } else {
     return a + b;
-  } else {
-    return null;
   }
 };
 
-math.sub = (c, d) => {
-  if (typeof c === 'number' && typeof d === 'number') {
-    return c - d;
-  } else {
+Math.sub = (c, d) => {
+  if (typeof c !== 'number' || typeof d !== 'number') {
     return null;
+  } else {
+    return c - d;
   }
 };
+
+module.exports = Math;

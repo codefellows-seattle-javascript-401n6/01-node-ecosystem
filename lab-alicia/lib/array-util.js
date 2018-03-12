@@ -1,17 +1,48 @@
 'use strict';
 
-//Exports an object
+let ArrUtil = {};
 
-//A sum function that accepts an array and returns the total of all the elements in the array.
-//return 0 is the array is empty
-//A min function that returns the smallest value from an array
-//return undefined if the array is empty
-//An is Sorted function that returns true if all the elements in the array appear in ascending order.
-//return true if the array is empty
-const acceptArray = module.exports = {};
-
-function acceptArray() {
-    if()
+ArrUtil.sumArr = (arr) => {
+  if (arr.length === 0) {
+    return 0;
+  } else {
+    let sum = arr.reduce(function (a, b) {
+      return a + b;
+    }, 0);
+    return sum;
+  }
 };
 
+ArrUtil.minArr = (arr) => {
+  if (arr.length === 0) {
+    return undefined;
+  }
+  let smallest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+      smallest = arr[i];
+    }
+  }
+  return smallest;
+};
 
+ArrUtil.isSorted = (arr) => {
+  if (arr[0] < arr[arr.length - 1]) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > arr[i + 1]) {
+        return false;
+      }
+    }
+  }
+  if (arr[0] > arr[arr.length - 1]) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < arr[i + 1]) {
+        return false;
+      }
+    }
+  }
+  return true;
+};
+
+module.exports = {};
+module.exports.ArrUtil = ArrUtil;

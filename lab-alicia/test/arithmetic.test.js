@@ -1,10 +1,6 @@
 'use strict';
 
-// Test each method for return number 
-// Test each method for null
-
 const math = require('../lib/arithmetic.js');
-const expect = require('expect');
 
 describe('testing math', () => {
   
@@ -14,7 +10,7 @@ describe('testing math', () => {
       expect(result).toEqual(7);
     });
     it('adds a string + 4 to equal null', () => {
-      let result = typeof math.add('not a number',4);
+      let result = math.add('not a number',4);
       expect(result).toEqual(null);
     });
   });
