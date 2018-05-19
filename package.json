@@ -1,0 +1,19 @@
+{
+  "name": "01-node-ecosystem",
+  "version": "1.0.0",
+  "description": "lab01",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpillay03/01-node-ecosystem.git"
+  },
+  "author": "Daniel Pillay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dpillay03/01-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/dpillay03/01-node-ecosystem#readme"
+}
